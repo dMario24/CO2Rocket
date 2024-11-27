@@ -5,6 +5,8 @@ import { mFont } from '@/app/ui/fonts';
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { ToastButton } from '@/components/my/toastButton'
+import { ProgressDemo } from '@/components/my/progressDemo';
+import { Progress } from "@/components/ui/progress"
 
 
 export default function Page() {
@@ -35,22 +37,29 @@ export default function Page() {
 
           
         </div>
+
+        <div>
+          <ProgressDemo />
+        </div>
+        
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image 
-            src="/rocket-dt.webp"
+            src="/rocket-3846720_1920.png"
             width={980}
-            height={980}
+            height={1673}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
           />
           <Image
-            src="/rocket-mb.webp"
+            src="/rocketman.webp"
             width={560}
             height={601}
             className="block md:hidden"
             alt="Screenshot of the dashboard project showing mobile version"
           />
+
         </div>
+        
       </div>
     </main>
   );
