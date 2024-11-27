@@ -1,5 +1,6 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
+import { Toaster } from '@/components/ui/toaster';
 
 export default function RootLayout({
   children,
@@ -11,6 +12,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
       {/* <body> */}
         {children}
+        <Toaster />
       </body>
     </html>
   );
