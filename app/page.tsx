@@ -3,6 +3,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { mFont } from '@/app/ui/fonts';
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 export default function Page() {
   return (
@@ -28,6 +29,8 @@ export default function Page() {
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
+
+          <Button>Click me</Button>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image 
