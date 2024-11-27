@@ -11,6 +11,7 @@
 - https://hangeul.naver.com/fonts/search?f=nanum
 - https://font.iropke.com/batang/#download
 - https://heroicons.com
+- https://ui.shadcn.com/docs/components/chart
 
 
 ### DB
