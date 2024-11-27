@@ -1,5 +1,6 @@
 'use client'
 
+import { ToastAction } from "@/components/ui/toast"
 import { useToast } from "@/hooks/use-toast"
 import { Button } from '@/components/ui/button'
 
@@ -10,12 +11,13 @@ export const ToastButton = () => {
     <Button
       onClick={() => {
         toast({
-          title: "Scheduled: Catch up",
-          description: "Friday, February 10, 2023 at 5:57 PM",
+          title: "로켓 발사",
+          description: "10 9 8 7 6 5 ...",
+          action: <ToastAction altText="발사 취소">발사 취소</ToastAction>,
         })
       }}
     >
-      Show Toast
+      countdown
     </Button>
   )
 }
