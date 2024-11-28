@@ -18,6 +18,8 @@
 - https://www.prisma.io/
 - https://orm.drizzle.team/docs/get-started
 
+### ERR
+- https://radix-ui.com/primitives/docs/components/dialog
 
 ---
 ## Next.js App Router Course - Starter

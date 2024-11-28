@@ -1,8 +1,8 @@
 "use client"
 
 import { Bar, BarChart } from "recharts"
-
 import { ChartConfig, ChartContainer } from "@/components/ui/chart"
+import { mFont } from '@/app/ui/fonts';
 
 const chartData = [
   { month: "January", desktop: 186, mobile: 80 },
@@ -26,11 +26,16 @@ const chartConfig = {
 
 export function YourFirstChart() {
   return (
+    <div className="w-full md:col-span-4">
+    <h2 className={`${mFont.className} mb-4 text-xl md:text-2xl`}>
+      <strong>S</strong>HADCN Chart
+    </h2>
     <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
       <BarChart accessibilityLayer data={chartData}>
         <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
         <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
       </BarChart>
     </ChartContainer>
+    </div>
   )
 }
